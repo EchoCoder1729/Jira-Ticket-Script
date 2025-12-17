@@ -7,7 +7,7 @@ A tool to convert security threats from a JSON file into Jira tickets.
 - Creates Jira tickets using the REST API
 - Maps "High" severity to "Highest" priority
 - Includes CVSS, Category, and Mitigations in the description
-- ~~Prevents duplicate ticket creation for the same Threat ID~~ (TODO)
+- Prevents duplicate ticket creation for the same Threat ID
 
 ## Setup
 

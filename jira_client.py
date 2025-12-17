@@ -35,7 +35,7 @@ class JiraClient:
             response = requests.get(search_url, headers=self.auth_header, params=params)
             response.raise_for_status()
             data = response.json()
-            return data.get("total", 0) > 0
+            return len(data.get("issues", [])) > 0
         except requests.exceptions.RequestException as e:
             print(f"Error checking for existing issue: {e}")
             if hasattr(e, 'response') and e.response is not None:
