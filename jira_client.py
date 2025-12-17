@@ -24,7 +24,7 @@ class JiraClient:
         Uses JQL to search for the Threat ID in the summary.
         """
         jql = f'project = "{self.project_key}" AND summary ~ "{threat_id}"'
-        search_url = f"{self.base_url}/rest/api/3/search"
+        search_url = f"{self.base_url}/rest/api/3/search/jql"
         
         params = {
             "jql": jql,
