@@ -1,0 +1,28 @@
+{
+    "threats": [
+        {
+            "id": "T-001",
+            "title": "SQL Injection in login form",
+            "category": "Injection",
+            "description": "User input is not properly sanitized.",
+            "mitigations": [
+                "Use parameterized queries to stop sql injection",
+                "Input validation of inputs"
+            ],
+            "cvss_rating": 8.9,
+            "severity": "High"
+        },
+        {
+            "id": "T-002",
+            "title": "Cross-Site Scripting (XSS) in comments",
+            "category": "XSS",
+            "description": "Malicious scripts can be injected into comments.",
+            "mitigations": [
+                "Escape user input",
+                "Use Content Security Policy"
+            ],
+            "cvss_rating": 6.5,
+            "severity": "Medium"
+        }
+    ]
+}
